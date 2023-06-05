@@ -1,0 +1,16 @@
+
+
+@media (max-width: 768px) {
+    .plans{
+        .plans-header{
+            flex-direction: column;
+            font-size: x-large;
+        }
+        .plansData{
+            flex-direction: column;
+            .plans-package:nth-of-type(2){
+                transform: none;
+            }
+        }
+    }
+}

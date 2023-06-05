@@ -1,0 +1,47 @@
+@import '../globleStyles/variable.scss';
+
+.join{
+
+    gap: 4rem;
+    .left-j{
+        padding: 0 2rem;
+        color: white;
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        hr{
+            width: 10.5rem;
+            height: 2px;
+            // background-color: $orange;
+            border: 2px solid $orange;
+            border-radius: 20%;
+        }
+        span{
+            .border-top{
+                border-top: 6px solid $orange;
+            }
+        }
+    }
+    .right-j{
+        align-self: flex-end;
+        .j-search{
+            background-color: $caloryCard;
+            padding: 1rem 2rem;
+            gap: 1rem;
+            input{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: $lightgray;
+                &::placeholder{
+                    color: $gray;
+                }
+            }
+            button{
+                background-color: $orange;
+                border: none;
+                color: white;
+            }
+        }
+    }
+}

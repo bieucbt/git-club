@@ -1,0 +1,67 @@
+@import '../globleStyles/variable.scss';
+
+
+.program{
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+    .program-header{
+        gap: 5rem;
+        font-weight: bold;
+        font-size: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        span{
+            &:nth-of-type(2){
+                color: white;
+            }
+        }
+    }
+
+    .programs-categories{
+        gap: 1rem;
+        .category{
+            background-color: $gray;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 2rem;
+            color: white;
+            gap: 1.5rem;
+            &:hover{
+                background-color: #ffa739;
+                cursor: pointer;
+            }
+            svg{
+                width: 2rem;
+                height: 2rem;
+                fill: white
+            }
+            span{
+                &:nth-of-type(1){
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+                &:nth-of-type(2){
+                    font-size: 0.9rem;
+                    flex-direction: column;
+                    margin-top: auto;
+                    line-height: 1.5rem;
+                }
+            }
+            .join-now{
+                gap: 3rem;
+                button{
+                border: none;
+                background-color: transparent;
+                color: white;
+                }
+                img{
+                    width: 1rem;
+                }
+            }
+            
+        }
+    }
+    
+}

@@ -1,0 +1,88 @@
+@import '../globleStyles/variable.scss';
+
+
+.left-t{
+    flex: 1 1;
+    gap: 2rem;
+    padding: 0 2rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    >span{
+        &:first-of-type{
+            color: $orange;
+            font-weight: bold;
+        }
+        &:nth-of-type(2), 
+        &:nth-of-type(3){
+            font-size: 4rem;
+        }
+        &:nth-of-type(3){
+            font-weight: bold;
+        }
+        &:nth-of-type(4){
+            word-spacing: .7rem;
+            line-height: 3.3rem;
+        }
+        &:nth-of-type(5){
+            span{
+                &:first-of-type{
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+
+.right-t{
+    flex: 1;
+    position: relative;
+    .img{
+        position: absolute;
+        right: 8rem;
+        top: 2rem;
+        
+        img{
+            width: 17rem;
+            height: 20rem;
+            object-fit: cover;
+            position: relative;
+            z-index: 3;
+        }
+        
+        &::before{
+            content: '';
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: 5px solid $orange;
+            z-index: 1;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            width: 100%;
+            height: 100%;
+            background-color: $orange;
+            z-index: 1;
+        }
+    }
+    .arrows{
+        position: absolute;
+        bottom: 10%;
+        left: -10%;
+        transform: translateX(-50%, -50%);
+        img{
+            width: 2rem;
+            height: 2rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

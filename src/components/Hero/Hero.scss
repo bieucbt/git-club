@@ -1,0 +1,177 @@
+@import '../globleStyles/variable.scss';
+
+.blur-hero{
+    width: 22rem;
+    height: 30rem;
+    top: 5rem;
+    left: 0;
+}
+
+.left-h{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    gap: 1.5rem;
+    li{
+        cursor: pointer;
+        &:hover{
+            color: $orange;
+        }
+    }
+    .the-best-ad{
+        margin-top: 4rem;
+        background-color: #363d42;
+        border-radius: 4rem;
+        width: fit-content;
+        padding: 20px 13px;
+        text-transform: uppercase;
+        color: white;
+        position: relative;
+        justify-content: flex-start;
+        div{
+            position: absolute;
+            background-color: $orange;
+            width: 5.4rem;
+            height: 80%;
+            left: 8px;
+            border-radius: 3rem;
+        }
+        span{
+            z-index: 1;
+        }
+    }
+
+    .hero-text{
+        flex-direction: column;
+        gap: 1.5rem;
+        text-transform: uppercase;
+        font-size: 4.5rem;
+        font-weight: bold;
+        color: white;
+        text-overflow: inherit;
+        div{
+            &:nth-of-type(3){
+                font-size: 1rem;
+                font-weight: 200;
+                letter-spacing: 1px;
+                width: 80%;
+                text-transform: none;
+            }
+        }
+    }
+
+    .figures{
+        gap: 2rem;
+        div{
+            flex-direction: column;
+            span{
+                &:first-child{
+                    color: white;
+                    font-size: 2rem;
+                }
+                &:last-child{
+                    color: $gray;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .hero-buttons{
+        gap: 2rem;
+        font-weight: normal;
+        button{
+            color: white;
+            background-color: $orange;
+            width: 8rem;
+            &:last-child{
+                background-color: transparent;
+                border: 2px solid $orange;
+            }
+        }
+        
+    }
+}
+
+.right-h{
+    flex: 1;
+    position: relative;
+    background-color: $orange;
+    .btn{
+        position: absolute;
+        right: 3rem;
+        top: 2rem;
+    }
+
+    .heart-rate{
+        flex-direction: column;
+        gap: 1rem;
+        background-color: $darkGrey;
+        width: fit-content;
+        padding: 16px;
+        align-items: start;
+        border-radius: 5px;
+        position: absolute;
+        top: 7rem;
+        right: 4rem;
+        z-index: 2;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        span{
+            color: $gray;
+            &:last-child{
+                color: white;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    >img{
+        width: 300px;
+        position: absolute;
+        &:nth-of-type(1){
+            top: 160px;
+            right: 8rem;
+            width: 23rem;
+            z-index: 2;
+        }
+        &:nth-of-type(2){
+            right: 20rem;
+            top: 4rem;
+            width: 15rem;
+        }
+    }
+
+    .calories{
+        gap: 2rem;
+        background-color: $caloryCard;
+        border-radius: 5px;
+        width: fit-content;
+        position: absolute;
+        top: 32rem;
+        right: 28rem;
+        padding: 1rem;
+        img{
+            width: 3rem;
+        }
+        p{
+            text-align: center;
+            &:nth-of-type(1){
+                color: $gray;
+            }
+            &:nth-of-type(2){
+                color: white;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+
+
+

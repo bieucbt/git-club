@@ -1,0 +1,33 @@
+
+
+.footer-container{
+    position: relative;
+    gap: 4rem;
+    padding: 7rem 0;
+    border-top: 3px solid white; 
+    .blur{
+        width: 13rem;
+        height: 13rem;
+        top: 33%;
+        filter: blur(150px);
+    }
+    .blur-l{
+        left: 15%;
+    }
+    .blur-r{
+        right: 15%;
+        background-color: red;
+    }
+    img{
+        width: 2rem;
+        object-fit: cover;
+    }
+    .social-f{
+        gap: 4rem;
+    }
+    .logo-f{
+        img{
+            width: 10rem;
+        }
+    }
+}

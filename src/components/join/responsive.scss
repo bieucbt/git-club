@@ -1,0 +1,21 @@
+
+
+
+@media (max-width: 768px){
+    .join{
+        flex-direction: column;
+        gap: 1.5rem;
+        .left-j{
+            span{
+                font-size: 1.5rem;
+            }
+        }
+        .right-j{
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            width: 100%;
+        }
+    }
+}
+

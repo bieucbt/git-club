@@ -1,0 +1,33 @@
+@import'../globleStyles/variable.scss';
+
+
+
+@media (max-width: 768px){
+    .header{
+        position: relative;
+        justify-content: flex-start;
+        width: 100%;
+        .header-menu{
+            position: fixed;
+            right: 2rem;
+            top: 4rem;
+            flex-direction: column;
+            background-color: $darkGrey;
+            padding: 2rem;
+            z-index: 10;
+        }
+        .bars{
+            position: fixed;
+            right: 2rem;
+            top: 2rem;
+            z-index: 100;
+            img{
+                width: 2rem;
+                height: 2rem;
+                background-color: $appColor;
+                padding: .4rem;
+            }
+        }
+    }
+    
+}
