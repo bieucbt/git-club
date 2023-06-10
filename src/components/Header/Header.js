@@ -27,35 +27,30 @@ export const Header = () => {
               <Link
                  onClick={() => setMenuOpen(false)}
                  to='/'
-                 span={"true"}
                  smooth={true}
               >Home</Link>  </li>
             <li onClick={() => setMenuOpen(false)}>
               <Link
                 onClick={() => setMenuOpen(false)}
                 to='programs'
-                span={"true"}
                 smooth={true}
               >Programs</Link> </li>
             <li onClick={() => setMenuOpen(false)}>
               <Link
                 onClick={() => setMenuOpen(false)}
                 to='reasons'
-                span={"true"}
                 smooth={true}
               >Why us</Link> </li>
             <li onClick={() => setMenuOpen(false)}>
               <Link
                 onClick={() => setMenuOpen(false)}
                 to='plans'
-                span={"true"}
                 smooth={true}
               >Plans</Link> </li>
             <li onClick={() => setMenuOpen(false)}>
               <Link
                 onClick={() => setMenuOpen(false)}
                 to='testimonials'
-                span={"true"}
                 smooth={true}
               >Testimonials</Link> </li>
           </ul>
